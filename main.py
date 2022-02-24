@@ -101,4 +101,4 @@ st.write(
 
 #User Data Analytics function
 st.title('Analytics')
-#st.bar_chart()
+#st.bar_chart()
