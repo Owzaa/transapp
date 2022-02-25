@@ -5,6 +5,7 @@
  # @copyright APPI SASU
  
 
+from curses import use_default_colors
 from typing import List
 from bokeh import themes
 from bokeh.themes import theme
@@ -73,6 +74,7 @@ with st.sidebar:
     image = Image.open("./img/iconlogo.png")
     st.image(image, width=175, caption=""" 'A.I Powered Transcription ' """)
     st.title("MY TRANSCRIPTION")
+    use_default_image = st.__file__()
     st.header("CAMERA [PICTURE]")
     picture = st.camera_input(label="Take a Picture")
     if picture:
