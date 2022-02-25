@@ -23,10 +23,7 @@ from views import *
 from PIL import Image
 import plotly.graph_objects as go
 import json
-
-
-
-    
+  
 st.title("AI Powered Transcription Service")
 st.write(
     """ Our A.I. powered Voice & Video transcription service already integrates with other advanced Human Automation A.I Speech-to-Text Services (API),
@@ -66,8 +63,10 @@ if fileObject:
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
-    data = result
-    st.download_button('download',data)
+    st.download_button('download',result)
+
+
+
 #Sidebar Nav Menue
 with st.sidebar:
     image = Image.open("./img/iconlogo.png")
@@ -81,7 +80,6 @@ with st.sidebar:
     picture = st.camera_input(label="Take a Picture")
     if picture:
         st.image(picture)
-
 
 
 #Form Submission Function
