@@ -39,7 +39,6 @@ st.audio(fileObject)
 
 if fileObject:
     token, t_id = upload_file(fileObject) 
-    audio_bytes = fileObject.read()
     bytesdata = fileObject.getvalue()
     st.write(bytesdata)
     result = {}
