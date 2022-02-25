@@ -102,7 +102,8 @@ st.write(
         'Format Type': ["mp3", "wav", "mpg", "mp3"],
         'Files Transcribed': [79,9,0,76]
     }))
-
 #User Data Analytics function
 st.title('Analytics')
+
+
 #st.bar_chart()
