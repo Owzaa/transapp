@@ -4,7 +4,6 @@
  # @desc Created on 2022-01-10 5:18:01 pm
  # @copyright APPI SASU
  
-
 import csv
 from distutils import text_file
 from typing import List
@@ -103,6 +102,4 @@ st.write(
     }))
 #User Data Analytics function
 st.title('Analytics')
-
-
 #st.bar_chart()
