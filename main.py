@@ -5,6 +5,8 @@
  # @copyright APPI SASU
  
 
+import csv
+from distutils import text_file
 from typing import List
 from bokeh import themes
 from bokeh.themes import theme
@@ -62,7 +64,7 @@ if fileObject:
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
-    st.download_button('download',result)
+    st.download_button('download',result,data='text',mine='text/csv')
 
 
 
@@ -72,13 +74,13 @@ with st.sidebar:
     st.image(image, width=175, caption=""" 'A.I Powered Transcription ' """)
     st.title("MY TRANSCRIPTION")
     pic = st.date_input("upload your Sound")
-    button_pic = pic
-    button_pic: st.button
+   
         
     st.header("CAMERA [PICTURE]")
     picture = st.camera_input(label="Take a Picture")
-    if picture:
-        st.image(picture)
+    if picture is not None:
+        bytes_data = picture.getvalue()
+        st.write(type(bytes_data))
 
 
 #Form Submission Function
