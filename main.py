@@ -63,7 +63,7 @@ if fileObject:
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
-    st.download_button('download',result,data='text',mine='text/csv')
+    st.download_button('download',mine='text/csv')
 
 
 
@@ -92,6 +92,8 @@ with st.sidebar:
     st.success("Video-To-Text Transcription")
     st.warning("Speech-To-Text Transcription")
     st.info("Real Time Transcription")
+
+
 #User File Resource Details
 st.subheader("User File Details",
              anchor="https://api.assemblyAI.com/user-details-data")
@@ -100,6 +102,8 @@ st.write(
         'Format Type': ["mp3", "wav", "mpg", "mp3"],
         'Files Transcribed': [79,9,0,76]
     }))
+
+
 #User Data Analytics function
 st.title('Analytics')
 #st.bar_chart()
