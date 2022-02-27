@@ -63,7 +63,7 @@ if fileObject:
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
-    st.download_button('download',mine='text/csv')]
+    st.download_button('download',mine='text/csv')
 
 
 
