@@ -59,7 +59,7 @@ if fileObject:
         progress_bar.progress(percent)
     with st.spinner('processing'):
         while result.get("status") != 'completed':
-        result = get_text(token, t_id)
+            result = get_text(token, t_id)
     st.balloons()
     st.header("Transcribed Text")
     st.write(result['text'])
