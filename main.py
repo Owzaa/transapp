@@ -5,7 +5,6 @@
 # @copyright APPI SASU
  
  
- 
 import csv
 from distutils import text_file
 from typing import List
