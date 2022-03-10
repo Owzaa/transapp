@@ -19,7 +19,6 @@ from transcribe import *
 import time
 import numpy as np
 import pandas as pd
-from views import *
 from PIL import Image
 import plotly.graph_objects as go
 import json
