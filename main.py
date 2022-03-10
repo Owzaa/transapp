@@ -7,7 +7,6 @@
  
 import csv
 from distutils import text_file
-from typing import List
 from bokeh import themes
 from bokeh.themes import theme
 import streamlit as st
